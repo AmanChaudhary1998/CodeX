@@ -1,8 +1,6 @@
-import java.util.Scanner;
 import java.util.*;
-
 class  MathewJohn{
-	public static void main(String args[]){
+	public static void main(String[]args) {
 		Scanner sc  = new  Scanner(System.in);
 
 		int t1 = sc.nextInt();
@@ -23,18 +21,18 @@ class  MathewJohn{
 			}
 		}
 
-		int temp=0;
+		int x=0;
 		for (int i = 0; i < hl.size(); i++)
 		{
 			if(tl.contains(hl.get(i)))
 			{
-				temp++;
-				if(temp==m){
+				x++;
+				if(x==m){
 					System.out.println(hl.get(i));
 				}
 			}							
 		}
-		if(temp<m){
+		if(x<m){
 			System.out.println("No number is present at this index");
 		}
     }	
